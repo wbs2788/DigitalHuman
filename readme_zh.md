@@ -1,7 +1,7 @@
 # 本地化多模态数字人交互系统
 
 ## 1. 项目概述 (Project Overview)
-本项目旨在构建一个低延迟、高隐私保护的实时数字人交互框架。系统整合了 **Qwen-3 (8B)** 大语言模型作为认知核心，利用 **GPT-SoVITS** 实现高保真少样本语音合成（Few-shot TTS），并通过 **Live2D** 技术实现基于音频驱动的唇形同步（Lip-sync）与视觉呈现。
+本项目旨在构建一个低延迟、高隐私保护的实时数字人交互框架。系统整合了 **Qwen-3 (8B)** 大语言模型作为认知核心，利用 **GPT-SoVITS** 实现高保真少样本语音合成（Few-shot TTS），并通过 **MuseTalk** 技术实现基于音频驱动的唇形同步（Lip-sync）与视觉呈现。
 
 项目核心目标是探索在消费级硬件上部署全链路（ASR-LLM-TTS-Visual）AI Agent 的可行性方案。
 
@@ -63,7 +63,7 @@ python -m app.main
 
 ### 3.3 前端部署 (Frontend Setup)
 
-前端采用 Next.js 构建，负责 Live2D 渲染与用户交互。
+前端采用 Next.js 构建，负责数字人渲染与用户交互。
 
 ```bash
 cd frontend
